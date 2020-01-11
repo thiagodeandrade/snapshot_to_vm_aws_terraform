@@ -8,7 +8,8 @@ This script create a dns entrance, A, in determinated zone in Route53
 
 You will need last ID Snapshot and ID Zone in you Route53
 
-```variable "client" {
+```
+variable "client" {
     type = "string"
     default = "clientburguer"
 }
