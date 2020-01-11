@@ -18,5 +18,10 @@ variable "mydnszone" {
     type = "string"
     default = "ZXXXXXX"
 }
+
+variable "clisnapshot" {
+    type = "string"
+    default = "snap-xxxxxxxx"
+}
 ```
 
