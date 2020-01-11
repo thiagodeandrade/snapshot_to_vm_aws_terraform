@@ -5,7 +5,7 @@ secret_key = "xxxxxxxxxxxxxxxx"
 region = "us-east-1"
 }
 
-# Variables
+## Variables
 #
 variable "client" {
     type = "string"
@@ -46,7 +46,7 @@ resource "aws_instance" "newserver" {
     Name  = "${var.client}-TEST"
   }
 }
-# Add public IP in domain rconnect.net.br
+# Add public IP in domain yourdomain.net.br
 #
 resource "aws_eip" "default" {
   instance = "${aws_instance.newserver.id}"
